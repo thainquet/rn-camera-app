@@ -2,10 +2,10 @@ import * as React from 'react';
 import { AppRegistry, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { RNCamera } from 'react-native-camera';
 
-const HomeScreen = () => {
+const CameraScreen = () => {
   const thisCamera = React.useRef()
   const takePicture = async () => {
-    if (HomeScreen) {
+    if (thisCamera.current) {
       const options = { quality: 0.5, base64: true };
       const data = await thisCamera.current.takePictureAsync(options);
       console.log(data.uri);
@@ -68,4 +68,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen
+export default CameraScreen

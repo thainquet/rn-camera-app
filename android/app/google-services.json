@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "596655066542",
+    "firebase_url": "https://maxflow-bisici.firebaseio.com",
+    "project_id": "maxflow-bisici",
+    "storage_bucket": "maxflow-bisici.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596655066542:android:4cb2cbaab031f2d8808c3f",
+        "android_client_info": {
+          "package_name": "com.maps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADJLuK-YWCJ-kzae6-dUTTOJ2FH6CVAFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596655066542-3rl4j8of2gt610roab8dg4vo1b8h189r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "596655066542-8t7sa0fji2mmdp5ou7phve669l0bhafv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.maxflow.workflows"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
