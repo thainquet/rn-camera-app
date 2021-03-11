@@ -2,7 +2,8 @@ import React, {useEffect} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import PushNotification from 'react-native-push-notification';
 
-const CameraScreen = () => {
+const CameraScreen = (props) => {
+  const {navigate} = props.navigation;
   useEffect(() => {
     PushNotification.localNotificationSchedule({
       //... You can use all the options from localNotifications
@@ -18,14 +19,23 @@ const CameraScreen = () => {
   }, []);
 
   return (
-    <View>
+    <View
+      style={{
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}>
       <Text>Homepage</Text>
       <TouchableOpacity
         onPress={() =>
           // PushNotification.cancelLocalNotifications({id: 'loopNoti'})
-          PushNotification.deleteChannel("channel-id")
+          PushNotification.deleteChannel('channel-id')
         }>
-        <Text>stop</Text>
+        <Text>Stop</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigate('Scan')}>
+        <Text>Scan</Text>
       </TouchableOpacity>
     </View>
   );
