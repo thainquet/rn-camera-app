@@ -18,11 +18,6 @@ const ScanScreen = (props) => {
             on your computer and scan the QR code.
             </Text>
         }
-        bottomContent={
-            <TouchableOpacity style={styles.buttonTouchable}>
-            <Text style={styles.buttonText}>OK. Got it!</Text>
-            </TouchableOpacity>
-        }
         />
     );
 };

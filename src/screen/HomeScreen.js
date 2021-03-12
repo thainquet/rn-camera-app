@@ -37,6 +37,9 @@ const CameraScreen = (props) => {
       <TouchableOpacity onPress={() => navigate('Scan')}>
         <Text>Scan</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigate('Test')}>
+        <Text>Test</Text>
+      </TouchableOpacity>      
     </View>
   );
 };
