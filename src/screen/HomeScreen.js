@@ -23,7 +23,7 @@ const CameraScreen = (props) => {
       style={{
         flex: 1,
         flexDirection: 'column',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
         alignItems: 'center',
       }}>
       <Text>Homepage</Text>
@@ -39,6 +39,9 @@ const CameraScreen = (props) => {
       </TouchableOpacity>
       <TouchableOpacity onPress={() => navigate('Test')}>
         <Text>Test</Text>
+      </TouchableOpacity>   
+      <TouchableOpacity onPress={() => navigate('FirebaseData')}>
+        <Text>FirebaseData</Text>
       </TouchableOpacity>      
     </View>
   );
